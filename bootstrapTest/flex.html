@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>flux布局的学习</title>
+  <style>
+    div {
+      margin: 2px;
+      background-color: #BD4C8E;
+    }
+
+    #dad {
+      background-color: blue;
+      width: 500px;
+      height: 500px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    #dad2 {
+      background-color: #8DBD3F;
+      width: 500px;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    #son-1 {
+      background-color: red;
+      width: 30px;
+      height: 30px;
+    }
+
+    #son-2 {
+      background-color: #000000;
+      width: 50px;
+      height: 30px;
+    }
+
+    #son-3 {
+      background-color: #1CDDAD;
+      width: 100px;
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="dad"></div>
+  <div id="son-1">son-1</div>
+  <div id="son-2">son-2</div>
+  <div id="son-3">son-3</div>
+  </div>
+  <div id="dad2">
+    <div style="flex:1">1111</div>
+    <div style="display: flex; flex-direction: row; background-color: black;flex: 8">
+
+      <div style="flex: 1">11</div>
+      <div style="flex: 4">22</div>
+      <div style="flex: 3">33</div>
+
+    </div>
+
+    <div style="flex: 1"> 1111</div>
+
+
+
+  </div>
+</body>
+
+</html>
