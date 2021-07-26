@@ -32,6 +32,7 @@
 *.dSYM/
 
 node_modules/
+dist/
 *.log
 *.class
 DS_Store
