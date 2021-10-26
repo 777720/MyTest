@@ -3,17 +3,17 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class MessageService {
-  constructor(public messageReposittory: MessageRepository) {}
+    constructor(public messageReposittory: MessageRepository) {}
 
-  async findOne(id: string) {
-    return this.messageReposittory.findOne(id);
-  }
+    async findOne(id: string) {
+        return this.messageReposittory.findOne(id);
+    }
 
-  async findAll() {
-    return this.messageReposittory.findAll();
-  }
+    async findAll() {
+        return this.messageReposittory.findAll();
+    }
 
-  async create(content: string) {
-    return this.messageReposittory.create(content);
-  }
+    async create(content: string) {
+        return this.messageReposittory.create(content);
+    }
 }
