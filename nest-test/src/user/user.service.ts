@@ -12,6 +12,9 @@ export class UserService {
     }
 
     findOne(id: number) {
+        if (!id) {
+            return null;
+        }
         const user = this.userRepo.findOne(id);
         return user;
     }
